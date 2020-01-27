@@ -1,3 +1,0 @@
-Void Loop ( ) {
-// kode program
-}
