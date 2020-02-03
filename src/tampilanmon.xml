@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/airbckground"
+    android:orientation="vertical"
+    tools:context="com.example.lalitachandiany.monitoring.MonitoringActivity">
+
+    <TextView
+        android:id="@+id/txtData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/persentase"
+        android:layout_marginBottom="16dp"
+        android:layout_toStartOf="@+id/back"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Distance"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txtDatadua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtData"
+        android:layout_alignBottom="@+id/txtData"
+        android:layout_alignEnd="@+id/progress"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Duration"
+        android:textSize="24sp" />
+
+
+
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="81dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Refresh" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:shadowColor="@color/cardview_dark_background"
+        android:text="Ketinggian AIR Saat Ini :"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="41dp"
+        android:text="Distance"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignStart="@+id/txtDatadua"
+        android:text="Duration"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="134dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/bcempat"
+        android:text="Kembali" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/persentase"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/holo_blue_bright"
+        android:max="100"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/persentase"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/holo_blue_bright"
+        android:gravity="center"
+        android:text="0 m"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lalitachandiany.monitoring.AirActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bcempat"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/about"
+            android:layout_width="263dp"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            android:src="@drawable/ombak" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Ketinggian Air"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/lightgray" />
+
+        <TextView
+            android:layout_width="278dp"
+            android:layout_height="162dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Jika sensor membaca jarak ketinggian air 20-10m maka aman dari bahaya banjir.
+            Apabila sensor membaca ketinggian air kurang dari 5m dan adanya suara serta lampu led menyala artinya AWAS BANJIR !!"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="136dp"
+            android:layout_height="52dp"
+            android:background="@drawable/bcempat"
+            android:text="Kembali" />
+
+    </LinearLayout>
+
+</LinearLayout>
